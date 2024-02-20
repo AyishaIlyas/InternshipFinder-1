@@ -34,7 +34,7 @@ def user_homepage(request):
     applicant = Applicant.objects.get(user=request.user)
     if request.method=="POST":   
         email = request.POST['email']
-        first_name=request.POST['first_name']
+        first_name=request.POST.get['first_name','']
         last_name=request.POST['last_name']
         phone = request.POST['phone']
         gender = request.POST['gender']
