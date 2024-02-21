@@ -92,7 +92,7 @@
 </style>
 <div class="container mt-5">
     <h1 class="text-center">User Signup</h1>
-<form  class="container" style= "width: 500px;" method="POST" enctype="multipart/form-data">
+<form  class="container" style= "width: 500px;" method="POST" enctype="multipart/form-data" action="/signup/?next={{ next_param }}">
     {% csrf_token %}
 
    
